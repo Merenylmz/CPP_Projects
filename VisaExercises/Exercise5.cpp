@@ -10,18 +10,22 @@ int** generatePascalTriangle(int numRows){
     {
         for (int j = 0; j <= i; j++)
         {
-            array[j] = new int();
+            array[j] = new int[j+1];
         }
     }
 
+    int sum = 2;
     for (int i = 0; i < numRows; i++)
     {
         array[i][0] = 1;
         for (int j = 0; j < i; j++)
         {
-            array[i][(j+1)] = 0;
-            //array[i][j] = 1;
+            if (i > 1)
+            {
+                array[(i)][(j)] = array[(i-1)][(j-1)] + array[i-1][j];
+            }
         }
+        array[i][i] = 1;
     }
 
     return array;

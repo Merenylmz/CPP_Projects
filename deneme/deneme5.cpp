@@ -91,8 +91,19 @@ int main(int argc, char* argv[]){
     << "\nEn Buyuk skor: " <<maximumScore(diseaseds, n)<<"\nEn kucuk skor: "<<minimumScore(diseaseds, n);
     
     int newScore;
-    cout << "\nYeni hasta skoru giriniz: "; cin >> newScore;
+    while ((newScore>10 || newScore < 0))
+    {
+        if (newScore>10 || newScore < 0)
+        {
+            cout << "\nHatali";
+        }
+        
+        cout << "\nYeni hasta skoru giriniz: "; cin >> newScore;
+    }
+    
+   
     diseaseds = addDiseased(diseaseds, n, newScore);
+
     n+=1;
     
 
