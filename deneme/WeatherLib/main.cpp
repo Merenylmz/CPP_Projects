@@ -1,19 +1,24 @@
 #include <iostream>
 #include <iomanip>
 
-#include "transformation.cpp";
-#include "analysis.cpp";
+//#include "transformation.cpp";
+//#include "analysis.cpp";
+
+#include "analysis.h"
+#include "transformation.h"
+
+//#include <tranformation.h>
 
 using namespace std;
 
 
-extern double celsiusToFahrenheit();
-extern double fahrenheitToCelcius();
-extern double celsiusToKelvin();
+// extern double celsiusToFahrenheit();
+// extern double fahrenheitToCelcius();
+// extern double celsiusToKelvin();
 
-extern double dailyAverage();
-extern double maximum();
-extern double minimum();
+// extern double dailyAverage();
+// extern double maximum();
+// extern double minimum();
 
 
 int main(){
@@ -26,13 +31,13 @@ int main(){
     double fahrenWeek[] = {};
     for (int i = 0; i < n; i++)
     {
-        fahrenWeek[i] = celsiusToFahrenheit(week[i]); 
+        fahrenWeek[i] = celciusToFahrenheit(week[i]); 
     }
 
     double kelvinWeek[] = {};
     for (int i = 0; i < n; i++)
     {
-        kelvinWeek[i] = celsiusToKelvin(week[i]); 
+        kelvinWeek[i] = celciusToKelvin(week[i]); 
     }
     
     cout << setprecision(2) << fixed <<"Fahrenheit Ortalamalar: "<< dailyAverage(fahrenWeek, n)<< 

@@ -1,4 +1,4 @@
-#include <iostream>
+#include "analysis.h"
 
 double dailyAverage(const double* temperatures, int n){
     double avg = 0;

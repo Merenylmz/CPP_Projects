@@ -1,0 +1,4 @@
+Laptop 15000 5
+
+Klavye 450 20
+Klavye 450 16.500000
