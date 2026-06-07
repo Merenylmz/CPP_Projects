@@ -31,7 +31,7 @@ class HR
         }
         
         void showInformations(){
-            cout << "\n" << "Isim: " << this->name << " Departman: " << this->departman << " Maas " << this->salary;
+            cout << "\n" << "Isim: " << this->name << " Departman: " << this->departman << " Maas " << this->salary<< endl;
         }
 
     
@@ -59,6 +59,7 @@ int main(){
             max = h->getSalary();
         }
     }
+    cout << "\nMax: " <<max << endl;
 
     for (HR* h: workersList)
     {

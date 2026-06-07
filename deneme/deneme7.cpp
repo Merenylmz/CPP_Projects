@@ -43,5 +43,7 @@ int main(){
 
     cout << "Toplam gelir: " << (reserv1.sumPrice()+ reserv2.sumPrice()+ reserv3.sumPrice());
 
+    cout << endl;
+
     return 0;
 }
